@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>HTTP</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="css/tooplate-style.css">
+	<script>
+		var renderPage = true;
+
+	if(navigator.userAgent.indexOf('MSIE')!==-1
+		|| navigator.appVersion.indexOf('Trident/') > 0){
+   		alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
+   		renderPage = false;
+	}
+	</script>
+</head>
+
+<body>
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+	</div>
+	<div class="container-fluid tm-main">
+		<div class="row tm-main-row">
+			<div id="tmSideBar" class="col-xl-3 col-lg-4 col-md-12 col-sm-12 sidebar">
+				<button id="tmMainNavToggle" class="menu-icon">&#9776;</button>
+				<div class="inner">
+					<nav id="tmMainNav" class="tm-main-nav">
+						<ul>
+							<li>
+								<a href="#intro" id="tmNavLink1" class="scrolly active" data-bg-img="constructive_bg_01.jpg" data-page="#tm-section-1">
+									<i class="fas fa-home tm-nav-fa-icon"></i>
+									<span>HTTP</span>
+								</a>
+							</li>
+							<li>
+								<a href="#products" id="tmNavLink2" class="scrolly" data-bg-img="pexels-therato-1933239.jpg" data-page="#tm-section-2" data-page-type="carousel">
+									<i class="fas fa-map tm-nav-fa-icon"></i>
+									<span>History</span>
+								</a>
+							</li>							
+							<li>
+								<a href="#company" id="tmNavLink3" class="scrolly" data-bg-img="pexels-mkbasil-247041.jpg" data-page="#tm-section-3">
+									<i class="fas fa-users tm-nav-fa-icon"></i>
+									<span>Security</span>
+								</a>
+							</li>
+							<li>
+								<a href="#contact" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-4">
+									<i class="fas fa-comments tm-nav-fa-icon"></i>
+									<span>Experimenting</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 tm-content">
+					<section id="tm-section-1" class="tm-section">
+						<div class="ml-auto">
+							<header class="mb-4"><h1 class="tm-text-shadow">The Invisible Workhorse: Unveiling the Power of HTTP</h1></header>
+							<p class="mb-5 tm-font-big">The internet thrives on a silent hero – the HyperText Transfer Protocol, or HTTP. This seemingly simple protocol, governed by RFC 2616, acts as the invisible backbone for all the information exchanged between web servers and our devices.
+								<br><br>
+								Imagine a conversation. HTTP operates like a request-response system, where browsers ask questions (requests) and servers deliver answers (responses). Both requests and responses are delivered in plain ASCII text, similar to emails. Content, however, is formatted using MIME, ensuring everything arrives organized and readable.</p>
+							<a href="#" class="btn tm-btn tm-font-big" data-nav-link="#tmNavLink2">Continue...</a> 
+						</div>
+					</section>
+					<section id="tm-section-2" class="tm-section tm-section-carousel">
+						<div class="ml-auto">
+							<header class="mb-4"><h1 class="tm-text-shadow">Early web pages were basic</h1></header>
+							<p class="mb-5 tm-font-big">Early web pages were basic, consisting primarily of text. But as the web evolved, so did HTTP. It embraced persistent connections, allowing browsers to send multiple requests without constantly re-establishing connections with servers. This significantly improved browsing speed.
+								<br><br>
+								But HTTP is more than just fetching web pages. It's a versatile tool. It can be used to:</p>
+								<div class="row">
+									<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
+										<div class="media tm-bg-transparent-black tm-border-white">
+											<i class="fab fa-apple tm-icon-circled tm-icon-media"></i>
+											<div class="media-body">
+												<h3>Update software</h3>
+												<p>Antivirus programs can download updates using HTTP.</p>	
+											</div>
+										</div>
+									</div>	
+									<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
+										<div class="media tm-bg-transparent-black tm-border-white">
+											<i class="fas fa-map-pin mr-4 tm-icon-circled tm-icon-media"></i>	
+											<div class="media-body">
+												<h3>Share files</h3>
+												<p>Project files can be exchanged between developers through HTTP requests.</p>	
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
+										<div class="media tm-bg-transparent-black tm-border-white">
+											<i class="fab fa-fly mr-4 tm-icon-circled tm-icon-media"></i>
+											<div class="media-body">
+												<h3>Communicate between devices</h3>
+												<p>Machine-to-machine communication often relies on HTTP. Imagine an airline booking a rental car for you as part of your vacation package – all orchestrated through HTTP requests!</p>		
+											</div>
+										</div>
+									</div>
+								</div>  		          	
+					</section>
+					<section id="tm-section-3" class="tm-section">						
+						<div class="ml-auto">
+							<header class="mb-4"><h1 class="tm-text-shadow">Security </h1></header>
+							<p class="mb-5 tm-font-big">Security is a major concern. HTTP messages can include authorization headers, ensuring only authorized users access specific content. Additionally, caching mechanisms within HTTP allow browsers to store frequently accessed pages, reducing load times and internet traffic.
+								<br><br>
+								While seemingly simple, HTTP is a powerful protocol that has driven the growth of the web. It's a testament to its flexibility that it has adapted from delivering static web pages to facilitating complex interactions between devices and applications.</p>
+						</div>					               
+					</section>
+					<section id="tm-section-4" class="tm-section">
+						<div class="tm-bg-transparent-black tm-contact-box-pad">
+							<div class="row mb-4">
+								<div class="col-sm-12">
+									<header><h2 class="tm-text-shadow">Experimenting with the Web</h2></header>
+								</div>
+							</div>
+							<div class="row tm-page-4-content">
+								The beauty of HTTP lies in its accessibility. Anyone with a basic understanding can interact with web servers directly. Try this command sequence in your terminal (replacing "www.ietf.org" with any website):
+								<div><p>telnet www.ietf.org 80<br>
+									GET /rfc.html HTTP/1.1<br>
+									Host: www.ietf.org</p></div>
+									This simple sequence establishes a connection, retrieves a file, and displays the response from the server. Witnessing HTTP in action provides a deeper appreciation for the invisible force that powers the web.
+							</div>
+						</div>
+					</section>					
+				</div>								
+		</div>
+		<div id="preload-01"></div>
+		<div id="preload-02"></div>
+		<div id="preload-03"></div>
+		<div id="preload-04"></div>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script type="text/javascript" src="./js/js.js"></script>
+	</body>
+</html>
